@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'GCD'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of GCD.'
+  s.summary          = 'GCD 封装.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,15 +18,14 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+对 dispatch 的C风格接口做了一层 OC 封装
                        DESC
 
-  s.homepage         = 'https://github.com/holaux@gmail.com/GCD'
+  s.homepage         = 'https://github.com/oneofai/GCD'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'holaux@gmail.com' => 'guang.yang@qingclass.com' }
-  s.source           = { :git => 'https://github.com/holaux@gmail.com/GCD.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Sun' => 'holaux@gmail.com' }
+  s.source           = { :git => 'https://github.com/oneofai/GCD.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
@@ -36,7 +35,7 @@ TODO: Add long description of the pod here.
   #   'GCD' => ['GCD/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+   s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

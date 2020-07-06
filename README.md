@@ -22,7 +22,7 @@ pod 'GCD'
 
 ## Author
 
-holaux@gmail.com, guang.yang@qingclass.com
+Sun, holaux@gmail.com
 
 ## License
 

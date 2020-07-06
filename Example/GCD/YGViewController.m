@@ -7,8 +7,12 @@
 //
 
 #import "YGViewController.h"
+#import <GCD/GCD.h>
 
 @interface YGViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *label;
+
+@property (nonatomic, strong) GCDTimer *timer;
 
 @end
 
@@ -16,7 +20,19 @@
 
 - (void)viewDidLoad
 {
+    
     [super viewDidLoad];
+    
+    _timer = [[GCDTimer alloc] init];
+    [_timer countDownEvent:^(float leftTime) {
+        self.label.text = [NSString stringWithFormat:@"%.0lfs", leftTime];
+    } completionEvent:^{
+        self.label.text = @"结束";
+    } cancelEvent:^{
+        
+    } timeIntervalWithSecs:1.0 totalSecs:60];
+    [_timer start];
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

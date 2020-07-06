@@ -1,0 +1,23 @@
+{
+  "name": "GCD",
+  "version": "0.1.0",
+  "summary": "GCD 封装.",
+  "description": "对 dispatch 的C风格接口做了一层 OC 封装",
+  "homepage": "https://github.com/oneofai/GCD",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Sun": "holaux@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/oneofai/GCD.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "GCD/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h"
+}
