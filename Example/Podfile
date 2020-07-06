@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'GCD_Example' do
+  pod 'GCD', :path => '../'
+
+  target 'GCD_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
